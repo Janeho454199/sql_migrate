@@ -8,20 +8,34 @@
 ## 目录结构
 
 >│├─ exec_sql（存放测试用脚本）
+>
 >│├─ ExecuteConvert.py（转换入口）
+>
 >│├─ migrate_core（转换核心）
+>
 >│├─ migrate_main（转换主类）
->│   └─ init.py
->│   └─ tth_convert（转换的处理逻辑）
->│        └── ddl_check.py（检查器）
->│        └── ddl_convertor.py（转换器）
->│        └── dml_check.py（检查器）
->│        └── dml_convertor.py（转换器）
->│        └── init.py
->│   └─ tth_migrate.py（转换的程序逻辑）
+>
+>│	└─ init.py
+>
+>│	└─ tth_convert（转换的处理逻辑）
+>
+>│	└─ tth_migrate.py（转换的程序逻辑）
+>
+>│		└─ ddl_check.py（检查器）
+>
+>│		└─ ddl_convertor.py（转换器）
+>
+>│		└─ dml_check.py（检查器）
+>
+>│		└─ dml_convertor.py（转换器）
+>
+>│		└─ init.py
+>
 >│├─ utils（通用工具类）
->│    └─ convert_tool.py
->│   └─ init.py
+>
+>│	└─ convert_tool.py
+>
+>│	└─ init.py
 
 ## 运行
 
