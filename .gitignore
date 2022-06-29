@@ -1,0 +1,5 @@
+# python pycode
+__pycache__/
+
+# test sql
+exec_sql/
