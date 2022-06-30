@@ -3,3 +3,6 @@ __pycache__/
 
 # test sql
 exec_sql/
+
+# pycharm
+.idea/
