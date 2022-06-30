@@ -98,7 +98,7 @@ return -1;
 
 ${LOGON_STR}
 
--- (1/1).¼ÓÔØÄ¿±ê±í:CARD_ACCT_RELA(¿¨ÕÊ¹ØÏµ±í)
+-- (1/1).åŠ è½½ç›®æ ‡è¡¨:CARD_ACCT_RELA(å¡å¸å…³ç³»è¡¨)
 
 drop
 join index
@@ -121,14 +121,14 @@ From ${CRMTARGETDB}.CARD_ACCT_RELA all;
 
 if ${var:_WARNING_CODE} then .QUIT 12;
 
-/* ÐÂÊý×¼±¸ -- Êý¾ÝÇåÏ´*/
-insert into ${CRMTARGETDB}.CARD_ACCT_RELA(ACT_IDN_SKY, -- ÕÊºÅ
-                                          CARDID, -- »ù×¼¿¨¿¨ºÅ
-                                          ACT_IDN_SKY_HOST, -- Ö÷¹ØÁªÕÊºÅ
-                                          PARTYID, -- µ±ÊÂÈË±àºÅ
-                                          HOST_PARTYID, -- Ö÷¿¨µ±ÊÂÈË±àºÅ
-                                          FX_RTE, -- »ãÂÊ
-                                          SUM_FLAG -- »ã×Ü±êÖ¾
+/* æ–°æ•°å‡†å¤‡ -- æ•°æ®æ¸…æ´—*/
+insert into ${CRMTARGETDB}.CARD_ACCT_RELA(ACT_IDN_SKY, -- å¸å·
+                                          CARDID, -- åŸºå‡†å¡å¡å·
+                                          ACT_IDN_SKY_HOST, -- ä¸»å…³è”å¸å·
+                                          PARTYID, -- å½“äº‹äººç¼–å·
+                                          HOST_PARTYID, -- ä¸»å¡å½“äº‹äººç¼–å·
+                                          FX_RTE, -- æ±‡çŽ‡
+                                          SUM_FLAG -- æ±‡æ€»æ ‡å¿—
 )
 select COALESCE(AL2.ACT_IDN_SKY, ''''),
        COALESCE(AL2.BM_CRD_NBR, ''''),
